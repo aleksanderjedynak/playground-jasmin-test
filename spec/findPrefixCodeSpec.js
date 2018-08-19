@@ -1,9 +1,9 @@
-var app = require('../app/app');
+var app = require('../app/findPrefixCode');
 
 describe('DialCodeFinder', function(){
 
     it('should return 48 when Poland is given', function(){
-        expect(findPrefixCode('Poland')).toEqual(48);
+        expect(app.findPrefixCode('Poland')).toEqual(48);
     });
 
 });
