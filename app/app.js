@@ -7,5 +7,6 @@ function App(id, name) {
 }
 
 App.prototype.getId = function(){ return this.id};
+App.prototype.reset = function () { this.id = null, this.name = null };
 
 module.exports = App;
