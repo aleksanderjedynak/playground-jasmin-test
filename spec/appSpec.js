@@ -3,7 +3,6 @@ var App = require('../app/app');
 describe('App', function () {
 
     var toDoList;
-    var resetToDoList;
     beforeEach(function(){
         toDoList = new App(5, 'ToDoList');
         console.log(['beforeEach ====>']);
