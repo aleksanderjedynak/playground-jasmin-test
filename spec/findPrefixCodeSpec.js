@@ -6,4 +6,8 @@ describe('DialCodeFinder', function(){
         expect(app.findPrefixCode('Poland')).toEqual(48);
     });
 
+    it('should return Unknown value when Unknown is given', function(){
+        expect(app.findPrefixCode('Unknown')).toEqual('Unknown value');
+    });
+
 });
