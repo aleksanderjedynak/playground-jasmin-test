@@ -8,8 +8,4 @@ function App(id, name) {
 
 App.prototype.getId = function(){ return this.id};
 
-// var a = new App(1,"test");
-
-// console.log(a.getName());
-
 module.exports = App;
