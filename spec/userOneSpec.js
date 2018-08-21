@@ -1,7 +1,7 @@
 var App = require('../app/userOne');
 var User = require('../app/userTwo');
 
-describe('string', function(){
+describe('Dummy -> users = user', function(){
 
     var toDoList;
 
