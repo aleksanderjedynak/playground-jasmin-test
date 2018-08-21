@@ -15,4 +15,19 @@ describe('Create App', function(){
         app.createApp('NOT');
         expect(app.savaApp).not.toHaveBeenCalled();
     });
+
+    it('should call saveApp() with app name', function(){
+        var app = new App();
+        spyOn(app, 'savaApp');
+        app.createApp('Aleksander');
+        expect(app.savaApp).toHaveBeenCalledWith('Aleksander');
+    });
+
+    it('should call saveApp() twice', function(){
+        var app = new App();
+        spyOn(app, 'savaApp');
+        app.createApp('Aleksander');
+        app.createApp('Aleksander');
+        expect(app.savaApp.calls.length).toBe(2);
+    });
 });
