@@ -1,5 +1,4 @@
 var App = require('../app/stub');
-// var sinon = reqire('sinon');
 
 describe("Hass Valid Name", function(){
 
